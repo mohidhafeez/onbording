@@ -134,11 +134,12 @@ class dotindicator extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return AnimatedContainer(
+      duration: Duration(milliseconds: 300),
       height: isActivated ? 12 : 4,
       width: 4,
       decoration: BoxDecoration(
-        color: Colors.black,
+        color: isActivated ? Colors.amber : Colors.black.withOpacity(0.5),
         borderRadius: BorderRadius.circular(10),
       ),
     );
