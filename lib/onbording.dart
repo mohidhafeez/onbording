@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project/content.dart';
+import 'package:project/dotSlider.dart';
 import 'package:project/home.dart'; // Assuming you have a content.dart file with your onboarding content
 
 class Onbording extends StatefulWidget {
@@ -132,27 +133,6 @@ class _OnbordingState extends State<Onbording> {
             height: 50,
           )
         ],
-      ),
-    );
-  }
-}
-
-class dotindicator extends StatelessWidget {
-  dotindicator({
-    this.isActivated = false,
-    super.key,
-  });
-  final bool isActivated;
-
-  @override
-  Widget build(BuildContext context) {
-    return AnimatedContainer(
-      duration: Duration(milliseconds: 300),
-      height: isActivated ? 12 : 4,
-      width: 4,
-      decoration: BoxDecoration(
-        color: isActivated ? Colors.amber : Colors.black.withOpacity(0.5),
-        borderRadius: BorderRadius.circular(10),
       ),
     );
   }
