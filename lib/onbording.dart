@@ -89,7 +89,7 @@ class _OnbordingState extends State<Onbording> {
                     contents.length,
                     (index) => Padding(
                           padding: const EdgeInsets.all(4.0),
-                          child: dotindicator(
+                          child: Dotindicator(
                             isActive: index == _pageIndex,
                           ),
                         )),
